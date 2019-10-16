@@ -5,6 +5,7 @@
   <figcaption>Fig.1 - Arduino - credit Spark Fun.</figcaption>
 </figure>
 
+----
 My basic attempt at circuitry and controllers like Arduino and Raspberry Pi
 
 
