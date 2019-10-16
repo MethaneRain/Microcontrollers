@@ -1,7 +1,5 @@
-![Spark Fun]<img src="https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png">
-
 <figure>
-  <img src="https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png" alt="" style="width:100%">
+  <img src="https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png" alt="https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png" style="width:100%">
   <figcaption>Fig.1 - Arduino - credit Spark Fun.</figcaption>
 </figure>
 
