@@ -1,4 +1,4 @@
-![Spark Fun](img src="https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png")
+![Spark Fun][img src="https://cdn.sparkfun.com/assets/9/1/e/4/8/515b4656ce395f8a38000000.png"]
 
 The Arduino micro controller is a way to work with analog and digital circuits. The Arduino can interface with computers via com and USB ports. There is a scripting Arduino IDE which runs off C++ (C?) code. The scripts allow for programing to control the Arduino and thus the circuits.
 
