@@ -73,76 +73,7 @@ digitalWrite(ledpinRight, LOW);
 Serial.println("Binary: ");
 Serial.println(controller_data, BIN);
 
- if (controller_data==B11101111){
-   Serial.println("Start has been Pressed"); 
-   digitalWrite(ledpinStart, HIGH);
-   Serial.println("LED lit, sucka!!");   
-   }  else {
-   Serial.println("");
-   }
-
- if (controller_data==B11011111){
-   Serial.println("Select has been Pressed");
-   digitalWrite(ledpinSelect, HIGH);
-   Serial.println("LED lit, sucka!!");   
-   }  else {
-   Serial.println("");
-   }
-   
- if (controller_data==B11110111){
-   Serial.println("Up has been Pressed");
-   digitalWrite(ledpinUp, HIGH);
-   Serial.println("LED lit, sucka!!");    
-   }  else {
-   Serial.println("");
-   } 
- 
- if (controller_data==B11111011){
-   Serial.println("Down has been Pressed"); 
-   digitalWrite(ledpinDown, HIGH);
-   Serial.println("LED lit, sucka!!");  
-   }  else {
-   Serial.println("");
-   }  
-  
- if (controller_data==B11111101){
-   Serial.println("Left has been Pressed"); 
-   digitalWrite(ledpinLeft, HIGH);
-   Serial.println("LED lit, sucka!!");  
-   }  else {
-   Serial.println("");
-   }  
-
- if (controller_data==B11111110){
-   Serial.println("Right has been Pressed");
-   digitalWrite(ledpinRight, HIGH);
-   Serial.println("LED lit, sucka!!");   
-   }  else {
-   Serial.println("");
-   }  
-  
- if (controller_data==B01111111){
-   Serial.println("A has been Pressed");
-   digitalWrite(ledpinA, HIGH);  
-   Serial.println("LED lit, sucka!!"); 
-   }  else {
-   Serial.println("");
-   }   
-   
- if (controller_data==B10111111){
-   Serial.println("B has been Pressed"); 
-   digitalWrite(ledpinB, HIGH);  
-   Serial.println("LED lit, sucka!!"); 
-   }  else {
-   Serial.println("");
-   }
- 
-
-
-//delayMicroseconds(1000);
-//digitalWrite(ledpin, LOW);    
-//digitalWrite(ledpin, LOW);   
-//for REFERENCE:  
+//for REFERENCE:
 //UP = 11110111
 //DOWN=11111011
 //LEFT=11111101
@@ -152,23 +83,84 @@ Serial.println(controller_data, BIN);
 //A=01111111
 //B=10111111
 
+ if (controller_data==B11101111){
+   Serial.println("Start has been Pressed");
+   digitalWrite(ledpinStart, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B11011111){
+   Serial.println("Select has been Pressed");
+   digitalWrite(ledpinSelect, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B11110111){
+   Serial.println("Up has been Pressed");
+   digitalWrite(ledpinUp, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B11111011){
+   Serial.println("Down has been Pressed");
+   digitalWrite(ledpinDown, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B11111101){
+   Serial.println("Left has been Pressed");
+   digitalWrite(ledpinLeft, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B11111110){
+   Serial.println("Right has been Pressed");
+   digitalWrite(ledpinRight, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B01111111){
+   Serial.println("A has been Pressed");
+   digitalWrite(ledpinA, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+ if (controller_data==B10111111){
+   Serial.println("B has been Pressed");
+   digitalWrite(ledpinB, HIGH);
+   Serial.println("LED lit, sucka!!");
+   }  else {
+   Serial.println("");
+   }
+
+
+
+//delayMicroseconds(1000);
+//digitalWrite(ledpin, LOW);
+//digitalWrite(ledpin, LOW);
+
+
 //if (controller_data==B01111111){
- //digitalWrite(ledpin, HIGH);   
+ //digitalWrite(ledpin, HIGH);
 // }
- 
+
 //if (controller_data==B10111111){
  //digitalWrite(ledpin, LOW);
 //}
- 
+
 delay(200);
-} 
-
-
-
-
-
-
-
-
-
-
+}
