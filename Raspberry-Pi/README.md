@@ -17,5 +17,5 @@ For a quick intro, these are the tasks/projects I've been able to accomplish thu
 ## Cheat Sheet:
 https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 
-## Screen Captur via Scrot:
+## Screen Capture via Scrot:
 * https://www.imore.com/how-take-screenshot-raspberry-pi
