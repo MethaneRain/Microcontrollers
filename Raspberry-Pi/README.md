@@ -13,3 +13,6 @@ For a quick intro, these are the tasks/projects I've been able to accomplish thu
 
 ## Installing Libre Office (if not already installed):
 * https://raspberrypi.stackexchange.com/questions/1800/how-do-i-install-libreoffice
+
+## Cheat Sheet:
+https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
