@@ -1,0 +1,130 @@
+pi@retropie:~ $ sudo apt-get install git-core
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  git-core
+0 upgraded, 1 newly installed, 0 to remove and 263 not upgraded.
+Need to get 1,504 B of archives.
+After this operation, 21.5 kB of additional disk space will be used.
+Get:1 http://mirrordirector.raspbian.org/raspbian/ jessie/main git-core all 1:2.1.4-2.1+deb8u7 [1,504 B]
+Fetched 1,504 B in 0s (3,411 B/s)     
+Selecting previously unselected package git-core.
+(Reading database ... 139991 files and directories currently installed.)
+Preparing to unpack .../git-core_1%3a2.1.4-2.1+deb8u7_all.deb ...
+Unpacking git-core (1:2.1.4-2.1+deb8u7) ...
+Setting up git-core (1:2.1.4-2.1+deb8u7) ...
+pi@retropie:~ $ pwd
+/home/pi
+pi@retropie:~ $ ls 
+30sec_video.py            Downloads                     RetroPie
+Adafruit_Python_MAX31855  garbage2.py                   RetroPie-Setup
+ahhhhhhhhhhhh.py          garbage.py                    SDL2-2.0.3
+ahhh.py                   high_tmps.txt                 SDL2-2.0.3.tar.gz
+ball.dat                  MSU_boogers.py                sketchbook
+buttcheeks.h264           MSU_test_function_example.py  temp2.py
+camera2.py                MSU_try.py                    Templates
+camera.py                 Music                         untitled0.py
+Desktop                   Pictures                      Videos
+Documents                 Public
+pi@retropie:~ $ cd ..
+pi@retropie:/home $ ls
+pi
+pi@retropie:/home $ cd pi
+pi@retropie:~ $ mkdir -p /home/pi/git/myFirstRepository
+pi@retropie:~ $ cd /home/pi/git/myFirstRepository
+pi@retropie:~/git/myFirstRepository $ git init --bare
+Initialized empty Git repository in /home/pi/git/myFirstRepository/
+pi@retropie:~/git/myFirstRepository $ git init
+Initialized empty Git repository in /home/pi/git/myFirstRepository/.git/
+pi@retropie:~/git/myFirstRepository $ git remote add myFirstRepository pi@192.168.1.108:/home/pi/git/myFirstRepository
+pi@retropie:~/git/myFirstRepository $ git add .
+pi@retropie:~/git/myFirstRepository $ git commit -m "Our first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <pi@retropie.(none)>) not allowed
+pi@retropie:~/git/myFirstRepository $ git push myFirstRepository master
+error: src refspec master does not match any.
+error: failed to push some refs to 'pi@192.168.1.108:/home/pi/git/myFirstRepository'
+pi@retropie:~/git/myFirstRepository $ git commit -m "Our first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <pi@retropie.(none)>) not allowed
+pi@retropie:~/git/myFirstRepository $ ^C
+pi@retropie:~/git/myFirstRepository $ git config --global user.email justin.richling@gmail.com
+pi@retropie:~/git/myFirstRepository $ ^C
+pi@retropie:~/git/myFirstRepository $ git config --global user.name JR
+pi@retropie:~/git/myFirstRepository $ git commit -m "Our first commit"
+[master (root-commit) 28b0518] Our first commit
+ 13 files changed, 509 insertions(+)
+ create mode 100644 HEAD
+ create mode 100755 config
+ create mode 100644 description
+ create mode 100755 hooks/applypatch-msg.sample
+ create mode 100755 hooks/commit-msg.sample
+ create mode 100755 hooks/post-update.sample
+ create mode 100755 hooks/pre-applypatch.sample
+ create mode 100755 hooks/pre-commit.sample
+ create mode 100755 hooks/pre-push.sample
+ create mode 100755 hooks/pre-rebase.sample
+ create mode 100755 hooks/prepare-commit-msg.sample
+ create mode 100755 hooks/update.sample
+ create mode 100644 info/exclude
+pi@retropie:~/git/myFirstRepository $ git config --global core.editor nano
+pi@retropie:~/git/myFirstRepository $ 
+
+
+
+
+
+
+
+
+
+
+
+pi@retropie:~/git/myFirstRepository $ cd ~
+pi@retropie:~ $ git init
+Initialized empty Git repository in /home/pi/.git/
+pi@retropie:~ $ git add README.md
+pi@retropie:~ $ git commit -m "first commit"
+[master (root-commit) 90b16e1] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+pi@retropie:~ $ git remote add origin https://github.com/MethaneRain/Git-try.git
+pi@retropie:~ $ git push -u origin master
+Username for 'https://github.com': Elephat84!
+Password for 'https://Elephat84!@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/MethaneRain/Git-try.git/'
+pi@retropie:~ $ git push -u origin master
+Username for 'https://github.com': MethaneRain
+Password for 'https://MethaneRain@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 274 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MethaneRain/Git-try.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+pi@retropie:~ $ ^C
+pi@retropie:~ $ 
