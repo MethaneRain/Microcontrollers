@@ -10,3 +10,6 @@ For a quick intro, these are the tasks/projects I've been able to accomplish thu
 
 ## Installing Pyhon 3.7 and making default:
 * https://www.ramoonus.nl/2018/06/30/installing-python-3-7-on-raspberry-pi/
+
+## Installing Libre Office (if not already installed):
+* https://raspberrypi.stackexchange.com/questions/1800/how-do-i-install-libreoffice
