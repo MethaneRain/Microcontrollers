@@ -19,3 +19,6 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 
 ## Screen Capture via Scrot:
 * https://www.imore.com/how-take-screenshot-raspberry-pi
+
+## Change dropdown menu items/:
+* https://www.raspberrypi.org/forums/viewtopic.php?p=901536
