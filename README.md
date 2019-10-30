@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-# Git from Raspberry Pi
-Just seeing if I can make this all work
 
-# If this shows up, then I did sometthing right...
-=======
 # Micro-controllers!
 
 <figure>
@@ -14,5 +9,3 @@ Just seeing if I can make this all work
 ----
 My basic attempt at circuitry and controllers like Arduino and Raspberry Pi
 
-
->>>>>>> c80402ddd9519ee2cc62fef4ae62a5b7d5ea25ff
