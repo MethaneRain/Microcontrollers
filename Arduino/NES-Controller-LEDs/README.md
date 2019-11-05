@@ -5,4 +5,4 @@
 
 <img src="https://github.com/MethaneRain/Microcontrollers/blob/master/Arduino/NES-Controller-LEDs/image_50457345.JPG" width="50%">
 
-<img src="https://github.com/MethaneRain/Microcontrollers/blob/master/Arduino/NES-Controller-LEDs/NES_Controller_test.gif" width="40" height="40" />
+<img src="https://github.com/MethaneRain/Microcontrollers/blob/master/Arduino/NES-Controller-LEDs/NES_Controller_test.gif" width="100" height="100" />
