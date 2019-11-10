@@ -28,6 +28,10 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 * https://mycyberuniverse.com/how-reclaim-full-capacity-flash-memory-card-usb-flash-drive.html
 
 #### My SD card was only showing 268mb even after a disk utility erase and refromat, but these instructions helped get all the memeory back available!
+
+List out our drives:
+* (*! Make sure not to erase your actual harddrive. BEWARE of which /dev/diskXX is your SD card!*)
+
 ```
 $ diskutil list
 /dev/disk0 (internal, physical):
@@ -41,7 +45,11 @@ $ diskutil list
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:     FDisk_partition_scheme                        *30.9 GB    disk2
    1:                  Apple_HFS Untitled                268.2 MB   disk2s1
+```
 
+Need to run as root (sudo); named the SD card MYSD with format for RPi
+
+```
 $ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
 Started erase on disk2
 Unmounting disk
@@ -53,7 +61,11 @@ Formatting disk2s1 as MS-DOS (FAT32) with name MYSD
 bps=512 spc=32 res=32 nft=2 mid=0xf8 spt=32 hds=255 hid=8192 drv=0x80 bsec=60358656 bspf=14729 rdcl=2 infs=1 bkbs=6
 Mounting disk
 Finished erase on disk2
+```
 
+Check to make sure it worked
+
+```
 $ diskutil list
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
