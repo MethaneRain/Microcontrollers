@@ -29,7 +29,7 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 
 #### My SD card was only showing 268mb even after a disk utility erase and refromat, but these instructions helped get all the memeory back available!
 ```
-(base) chowdahead@Ulyssess-MacBook-Air:~$ diskutil list
+$ diskutil list
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *251.0 GB   disk0
@@ -42,7 +42,7 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
    0:     FDisk_partition_scheme                        *30.9 GB    disk2
    1:                  Apple_HFS Untitled                268.2 MB   disk2s1
 
-(base) chowdahead@Ulyssess-MacBook-Air:~$ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
+$ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
 Started erase on disk2
 Unmounting disk
 Creating the partition map
@@ -54,7 +54,7 @@ bps=512 spc=32 res=32 nft=2 mid=0xf8 spt=32 hds=255 hid=8192 drv=0x80 bsec=60358
 Mounting disk
 Finished erase on disk2
 
-(base) chowdahead@Ulyssess-MacBook-Air:~$ diskutil list
+$ diskutil list
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *251.0 GB   disk0
@@ -66,7 +66,5 @@ Finished erase on disk2
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:     FDisk_partition_scheme                        *30.9 GB    disk2
    1:                 DOS_FAT_32 MYSD                    30.9 GB    disk2s1
-
-(base) chowdahead@Ulyssess-MacBook-Air:~$ 
 
 ```
