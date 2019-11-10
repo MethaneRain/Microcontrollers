@@ -26,7 +26,22 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 ## Reformating SD card that doesn't show full memory:
 #### For Mac 
 * https://mycyberuniverse.com/how-reclaim-full-capacity-flash-memory-card-usb-flash-drive.html
+
+#### My SD card was only showing 268mb even after a disk utility erase and refromat, but these instructions helped get all the memeory back available!
 ```
+(base) chowdahead@Ulyssess-MacBook-Air:~$ diskutil list
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *251.0 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh HD            250.1 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *30.9 GB    disk2
+   1:                  Apple_HFS Untitled                268.2 MB   disk2s1
+
 (base) chowdahead@Ulyssess-MacBook-Air:~$ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
 Started erase on disk2
 Unmounting disk
