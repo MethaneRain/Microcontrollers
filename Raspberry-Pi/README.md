@@ -30,7 +30,7 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 #### My SD card was only showing 268mb even after a disk utility erase and refromat, but these instructions helped get all the available memeory back
 
 List out our drives:
-* !! Make sure not to erase your actual harddrive. BEWARE of which /dev/diskXX is your SD card !!
+* !! Make sure not to erase your actual hard drive or other external HDs. BEWARE of which /dev/diskXX is your SD card !!
 
 ```
 $ diskutil list
