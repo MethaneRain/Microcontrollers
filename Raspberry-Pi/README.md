@@ -22,3 +22,6 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 
 ## Change dropdown menu items?:
 * https://www.raspberrypi.org/forums/viewtopic.php?p=901536
+
+## Reformating SD card that doesn't show full memory:
+* https://mycyberuniverse.com/how-reclaim-full-capacity-flash-memory-card-usb-flash-drive.html
