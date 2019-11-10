@@ -1,6 +1,6 @@
 
 <figure>
-  <img src="https://www.raspberrypi.org/homepage-9df4b/static/hero-shot-33d83b8c5fa0933373dabcc9462b32a3.png" alt=" style="width:50%" title="https://www.raspberrypi.org/">
+  <img src="https://www.raspberrypi.org/homepage-9df4b/static/hero-shot-33d83b8c5fa0933373dabcc9462b32a3.png" alt=" style="width:5%" title="https://www.raspberrypi.org/">
   <figcaption>Fig.1 - Raspberry Pi- credit raspberrypi.org.</figcaption>
 </figure>
 
