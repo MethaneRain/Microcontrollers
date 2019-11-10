@@ -1,4 +1,4 @@
-<img src="https://www.raspberrypi.org/homepage-9df4b/static/hero-shot-33d83b8c5fa0933373dabcc9462b32a3.png">
+<img src="https://www.raspberrypi.org/homepage-9df4b/static/hero-shot-33d83b8c5fa0933373dabcc9462b32a3.png" width="75%">
 
 
 
@@ -51,7 +51,7 @@ $ diskutil list
    1:                  Apple_HFS Untitled                268.2 MB   disk2s1
 ```
 
-Need to run as root (sudo); named the SD card MYSD with format for RPi
+Need to run as root (sudo); named the SD card RPI with format for RPi
 
 ```
 $ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
@@ -81,6 +81,6 @@ $ diskutil list
 /dev/disk2 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:     FDisk_partition_scheme                        *30.9 GB    disk2
-   1:                 DOS_FAT_32 MYSD                    30.9 GB    disk2s1
+   1:                 DOS_FAT_32 RPI                    30.9 GB    disk2s1
 
 ```
