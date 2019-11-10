@@ -24,4 +24,34 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 * https://www.raspberrypi.org/forums/viewtopic.php?p=901536
 
 ## Reformating SD card that doesn't show full memory:
+#### For Mac 
 * https://mycyberuniverse.com/how-reclaim-full-capacity-flash-memory-card-usb-flash-drive.html
+```
+(base) chowdahead@Ulyssess-MacBook-Air:~$ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
+Started erase on disk2
+Unmounting disk
+Creating the partition map
+Waiting for partitions to activate
+Formatting disk2s1 as MS-DOS (FAT32) with name MYSD
+512 bytes per physical sector
+/dev/rdisk2s1: 60329152 sectors in 1885286 FAT32 clusters (16384 bytes/cluster)
+bps=512 spc=32 res=32 nft=2 mid=0xf8 spt=32 hds=255 hid=8192 drv=0x80 bsec=60358656 bspf=14729 rdcl=2 infs=1 bkbs=6
+Mounting disk
+Finished erase on disk2
+
+(base) chowdahead@Ulyssess-MacBook-Air:~$ diskutil list
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *251.0 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh HD            250.1 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *30.9 GB    disk2
+   1:                 DOS_FAT_32 MYSD                    30.9 GB    disk2s1
+
+(base) chowdahead@Ulyssess-MacBook-Air:~$ 
+
+```
