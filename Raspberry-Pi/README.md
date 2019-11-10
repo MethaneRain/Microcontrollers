@@ -27,7 +27,7 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 #### For Mac 
 * https://mycyberuniverse.com/how-reclaim-full-capacity-flash-memory-card-usb-flash-drive.html
 
-#### My SD card was only showing 268mb even after a disk utility erase and refromat, but these instructions helped get all the memeory back available!
+#### My SD card was only showing 268mb even after a disk utility erase and refromat, but these instructions helped get all the available memeory back
 
 List out our drives:
 * (*! Make sure not to erase your actual harddrive. BEWARE of which /dev/diskXX is your SD card!*)
