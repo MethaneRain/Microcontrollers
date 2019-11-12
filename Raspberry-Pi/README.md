@@ -41,9 +41,9 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 
 List out our drives:
 * !! Make sure not to erase your actual hard drive or other external HDs. BEWARE of which /dev/diskXX is your SD card !!
+In terminal, run ```$ diskutil list```
 
 ```
-$ diskutil list
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *251.0 GB   disk0
@@ -59,8 +59,9 @@ $ diskutil list
 
 Need to run as root (sudo); named the SD card RPI with format for RPi
 
+```$ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2```
+
 ```
-$ sudo diskutil eraseDisk FAT32 MYSD MBRFormat /dev/disk2
 Started erase on disk2
 Unmounting disk
 Creating the partition map
@@ -77,6 +78,9 @@ Check to make sure it worked
 
 ```
 $ diskutil list
+```
+
+```
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *251.0 GB   disk0
