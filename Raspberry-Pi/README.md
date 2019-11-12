@@ -41,6 +41,7 @@ https://www.raspberrypistarterkits.com/guide/raspberry-pi-commands-cheat-sheet/
 
 List out our drives:
 * !! Make sure not to erase your actual hard drive or other external HDs. BEWARE of which /dev/diskXX is your SD card !!
+
 In terminal, run ```$ diskutil list```
 
 ```
